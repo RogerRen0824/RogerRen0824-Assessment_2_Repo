@@ -5,7 +5,7 @@ This project uses the global COVID-19 dataset provided by Johns Hopkins Universi
 ## **Data Source**
 The original dataset can be found on GitHub in the [CSSEGISandData/COVID-19](https://github.com/CSSEGISandData/COVID-19) repository.
 
-### **How to Download the Data**
+### **1. How to Download the Data**
 
 1. **Clone the Johns Hopkins COVID-19 Repository**  
    Run the following command in your terminal to clone the data repository:
@@ -32,7 +32,6 @@ covid19_analysis/
 │
 ├── data/                          # COVID-19 data files
 ├── scripts/                       # Python analysis scripts
-├── notebooks/                     # Jupyter Notebooks
 ├── figures/                       # Visualizations and plots
 ├── results/                       # Output files
 ├── README.md                      # Documentation
@@ -61,25 +60,6 @@ covid19_analysis/
 
 ---
 
-### **4. Testing and Code Review**
-- Test your code locally before pushing changes.
-- Review pull requests thoroughly before approving.
-
----
-
-### **5. .gitignore Rules**
-To avoid committing unnecessary files, add the following to `.gitignore`:
-```
-__pycache__/
-*.csv.zip
-*.csv.tar
-*.log
-data/raw_data/
-figures/temp/
-```
-
----
-
 ## **Project Setup**
 1. Install required libraries:
    ```bash
@@ -93,6 +73,3 @@ figures/temp/
 
 ---
 
-By following these rules, the team can work collaboratively, efficiently, and without conflicts. For any questions or issues, please open a **GitHub Issue** or reach out to the team.
-
----
