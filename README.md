@@ -25,36 +25,6 @@ The original dataset can be found on GitHub in the [CSSEGISandData/COVID-19](htt
 
 ---
 
-## **Collaboration Rules**
-
-### **1. Git Workflow**
-- Use **feature branches**:
-   - Name branches following the convention:
-     - `feature/<feature-name>`: For new scripts or features.
-     - `fix/<bug-name>`: For bug fixes.
-     - `data/<updates>`: For data updates.
-
-   Example:
-   ```bash
-   git checkout -b feature/add-visualizations
-   ```
-
-- **Commit Messages**:  
-   Write clear, descriptive commit messages:
-   ```bash
-   git add .
-   git commit -m "feature: Add visualization for top 10 countries"
-   ```
-
-- **Pull Requests**:  
-   - Push your branch and open a PR:
-     ```bash
-     git push origin feature/<branch-name>
-     ```
-   - Request a review before merging into `main`.
-
----
-
 ### **2. Directory Structure**
 Maintain this structure:
 ```
