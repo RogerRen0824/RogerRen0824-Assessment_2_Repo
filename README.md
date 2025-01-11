@@ -61,7 +61,7 @@ covid19_analysis/
 ## **Project Setup**
 1. Install required libraries:
    ```bash
-   pip install pandas matplotlib
+   pip install pandas matplotlib plotly tabulate
    ```
 
 2. Run the analysis script:
