@@ -66,7 +66,7 @@ covid19_analysis/
 
 2. Run the analysis script:
    ```bash
-   python scripts/covid_analysis.py
+   python some_code_file.py
    ```
 
 ---
