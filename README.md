@@ -32,7 +32,7 @@ covid19_analysis/
 │
 ├── data/                          # COVID-19 data files
 ├── some_code_file.py              # Python analysis scripts
-├── saved_figure/                 # Visualizations and plots
+├── saved_figure/                  # Visualizations and plots
 ├── README.md                      # Documentation
 └── .gitignore                     # Ignore unnecessary files
 ```
