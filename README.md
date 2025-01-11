@@ -31,9 +31,8 @@ Maintain this structure:
 covid19_analysis/
 │
 ├── data/                          # COVID-19 data files
-├── scripts/                       # Python analysis scripts
-├── figures/                       # Visualizations and plots
-├── results/                       # Output files
+├── some_code_file.py              # Python analysis scripts
+├── saved_figures/                 # Visualizations and plots
 ├── README.md                      # Documentation
 └── .gitignore                     # Ignore unnecessary files
 ```
