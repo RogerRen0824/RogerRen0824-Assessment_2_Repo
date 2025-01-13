@@ -15,7 +15,7 @@ The original dataset can be found on GitHub in the [CSSEGISandData/COVID-19](htt
 
    Or you can just clone this repo：
    ```bash
-   git clone --depth 1 https://github.com/CSSEGISandData/COVID-19.git
+   git clone https://github.com/RogerRen0824/RogerRen0824-Assessment_2_Repo.git
    ```
    
 2. **Locate the Data Files**  
