@@ -2,8 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load datasets
-confirmed_global = pd.read_csv('Covid19/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
-recovered_global = pd.read_csv('Covid19/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv')
+confirmed_global = pd.read_csv('COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
+recovered_global = pd.read_csv('COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv')
 
 # Aggregate data for each country
 def aggregate_data(df):
@@ -50,6 +50,6 @@ ax.set_xticklabels(top_20_confirmed["Country/Region"], rotation=45, ha="right")
 ax.legend()
 
 plt.tight_layout()
-plt.savefig("F:/python_environment/Covid19/saved_figure/top_20_confirmed_vs_recoveries.png")
+plt.savefig("saved_figure/top_20_confirmed_vs_recoveries.png")
 plt.show()
 

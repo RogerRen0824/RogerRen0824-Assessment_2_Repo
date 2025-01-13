@@ -3,9 +3,9 @@ from tabulate import tabulate
 import matplotlib.pyplot as plt
 
 # Load datasets
-confirmed_global = pd.read_csv('Covid19/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
-deaths_global = pd.read_csv('Covid19/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
-recovered_global = pd.read_csv('Covid19/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv')
+confirmed_global = pd.read_csv('COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
+deaths_global = pd.read_csv('COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
+recovered_global = pd.read_csv('COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv')
 
 # Aggregate data for each country
 def aggregate_data(df):
@@ -56,7 +56,7 @@ final_data = final_data.sort_values(by="Confirmed", ascending=False)
 print(tabulate(final_data.head(20), headers="keys", tablefmt="pretty"))
 
 # Save the cleaned data to a CSV file
-final_data.to_csv("F:/python_environment/Covid19/cleaned_covid_data.csv", index=False)
+final_data.to_csv("cleaned_covid_data.csv", index=False)
 
 # Save the table as an image
 fig, ax = plt.subplots(figsize=(10, 6))  # Adjust size as needed
@@ -76,7 +76,7 @@ table.auto_set_column_width(col=list(range(len(final_data.columns))))
 
 # Save the table as an image
 plt.title("Top 20 Countries by COVID-19 Data", fontsize=14)
-output_path = 'F:/python_environment/Covid19/saved_figure/top_20_countries_covid_data.png'
+output_path = 'saved_figure/top_20_countries_covid_data.png'
 plt.savefig(output_path)
 plt.show()
 
@@ -90,7 +90,7 @@ plt.ylabel("Recovery Rate (%)")
 plt.title("Top 10 Countries by Recovery Rate")
 plt.xticks(rotation=45, ha="right")
 plt.tight_layout()
-output_path = 'F:/python_environment/Covid19/saved_figure/top_10_recovery_rate.png'
+output_path = 'saved_figure/top_10_recovery_rate.png'
 plt.savefig(output_path)
 plt.show()
 

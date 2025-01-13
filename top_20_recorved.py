@@ -2,9 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load datasets
-confirmed_global = pd.read_csv('Covid19/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
-deaths_global = pd.read_csv('Covid19/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
-recovered_global = pd.read_csv('Covid19/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv')
+confirmed_global = pd.read_csv('COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
+deaths_global = pd.read_csv('COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
+recovered_global = pd.read_csv('COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv')
 
 # Aggregate data for each country
 def aggregate_data(df):
@@ -44,5 +44,5 @@ plt.ylabel("Recovery Rate (%)")
 plt.title("Top 20 Countries by COVID-19 Recovery Rate")
 plt.xticks(rotation=45, ha="right")
 plt.tight_layout()
-plt.savefig("F:/python_environment/Covid19/saved_figure/top_20_recovery_rate.png")
+plt.savefig("saved_figure/top_20_recovery_rate.png")
 plt.show()

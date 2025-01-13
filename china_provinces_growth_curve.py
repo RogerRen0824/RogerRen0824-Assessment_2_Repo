@@ -3,7 +3,7 @@ import plotly.graph_objects as go
 import plotly.io as pio  # Import for saving HTML
 
 # Load dataset
-file_path = 'Covid19/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
+file_path = 'COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
 data = pd.read_csv(file_path)
 
 # Filter data where Country/Region == 'China'
@@ -43,7 +43,7 @@ fig.update_layout(
 )
 
 # Save the graph as an HTML file
-output_file = "F:/python_environment/Covid19/saved_figure/china_covid_growth_curves.html"
+output_file = "saved_figure/china_covid_growth_curves.html"
 pio.write_html(fig, file=output_file, auto_open=False)  # auto_open=False to prevent it from opening immediately
 
 # Show the interactive graph

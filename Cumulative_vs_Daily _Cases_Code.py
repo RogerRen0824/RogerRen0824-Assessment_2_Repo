@@ -2,8 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # File paths (replace with your actual paths)
-confirmed_path = 'Covid19/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
-deaths_path = 'Covid19/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv'
+confirmed_path = 'COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
+deaths_path = 'COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv'
 
 # Load datasets
 confirmed = pd.read_csv(confirmed_path)
@@ -41,7 +41,7 @@ events = {
 }
 
 # Visualization
-fig, ax1 = plt.subplots(figsize=(14, 8))
+fig, ax1 = plt.subplots(figsize=(16, 10))
 
 # Plot daily new cases and rolling average
 ax1.plot(daily_new_cases.index, daily_new_cases, label='Daily New Cases', color='blue', alpha=0.5)
@@ -88,7 +88,7 @@ ax1.legend(loc='upper left')
 ax2.legend(loc='upper right')
 
 # Save and show the plot
-output_path = 'F:/python_environment/Covid19/saved_figure/cumulative_vs_daily_cases_dual_axis.png'
+output_path = 'saved_figure/cumulative_vs_daily_cases_dual_axis.png'
 plt.savefig(output_path)
 plt.tight_layout()
 plt.show()
