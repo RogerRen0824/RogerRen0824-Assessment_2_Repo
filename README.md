@@ -8,10 +8,16 @@ The original dataset can be found on GitHub in the [CSSEGISandData/COVID-19](htt
 ### **1. How to Download the Data**
 
 1. **Clone the Johns Hopkins COVID-19 Repository**  
-   Run the following command in your terminal to clone the data repository:
+   Run the following command in your terminal to clone the whole data repository:
    ```bash
    git clone --depth 1 https://github.com/CSSEGISandData/COVID-19.git
+   ```
 
+   Or you can just clone this repo：
+   ```bash
+   git clone --depth 1 https://github.com/CSSEGISandData/COVID-19.git
+   ```
+   
 2. **Locate the Data Files**  
    Go to the `csse_covid_19_data/csse_covid_19_time_series` folder. 
 
